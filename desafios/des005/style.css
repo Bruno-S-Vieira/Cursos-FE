@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(161, 115, 205);
+    color: white;
+}
+
+h1 {
+    background-color: rgb(202, 157, 245);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+h2 {
+    background-color: rgb(202, 157, 245);
+    color: white;
+    font-size: 25px;
+}
+p {
+    font-size: 20px;
+}
