@@ -2,6 +2,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+main {
+    margin: auto;
+    
+
+}
 body {
     background-color: #edd7df;
     color: white;
@@ -23,4 +28,7 @@ p {
 }
 img {
     float: left;
+}
+li {
+    color: #ffffff;
 }
