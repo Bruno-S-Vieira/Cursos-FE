@@ -1,0 +1,11 @@
+* {/*config global das CSS */
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #edd7df, #e6b6c8, #c6849d);
+    /*radial-gradient(circle)*/
+}
+h1 {
+    color: rgb(237, 134, 182);
+}
