@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
 main {
@@ -10,6 +10,7 @@ main {
 body {
     background-color: #edd7df;
     color: white;
+    margin-top: auto;
 }
 
 h1 {
@@ -19,10 +20,13 @@ h1 {
     font-size: 30px;
 }
 h2 {
+    margin: 20px;
     color: #c6849d;
     font-size: 25px;
 }
 p {
+    margin-left: auto;
+    margin-top: auto;
     font-size: 20px;
     color: black;
 }
