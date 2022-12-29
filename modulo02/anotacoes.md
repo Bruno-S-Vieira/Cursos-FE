@@ -17,7 +17,7 @@ __Fontes Seguras:__
 
 https://www.w3schools.com/cssref/css_websafe_fonts.php#:~:text=use%20fallback%20fonts!-,Arial%20(sans-serif),on%20all%20major%20operating%20systems.
 
-Fontes bonitas: Courier New;
+Fontes bonitas: Courier New;<br>Pesquisar->Google Fonts
 
 ->Opções em comandos:
 
