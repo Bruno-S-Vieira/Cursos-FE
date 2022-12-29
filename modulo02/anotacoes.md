@@ -19,6 +19,15 @@ https://www.w3schools.com/cssref/css_websafe_fonts.php#:~:text=use%20fallback%20
 
 Fontes bonitas: Courier New;
 
-Opções em comandos:
+->Opções em comandos:
 
-font-weight: lighter-normal-bold-bolder;
+----shorthand font----
+
+ex:
+
+font-style: italic;<br>font-weight: normal;<br>font-size: 3em;<br>font-family: Courier New;
+
+simplificação:<br>
+!IMPORTANTE! style->weight->size->family <br> `font:italic normal 3em Courier New;`
+
+
