@@ -8,4 +8,12 @@ body {
 }
 h1 {
     color: rgb(237, 134, 182);
+    text-align: center;
+}
+h2 {
+    text-align: left;
+}
+p {
+    color: black;
+    text-align: justify;
 }
