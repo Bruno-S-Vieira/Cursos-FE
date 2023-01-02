@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é id     =   em CSS é # 
+    em HTML é class  =   em CSS é .
+*/
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(210, 255, 208);
+}
+h1#principal {
+    background-color: rgba(77, 137, 117, 0.729);
+    color: white;
+}
+h1 {
+    text-align: center;
+    color: rgba(77, 137, 117, 0.729);
+}
+h2 {
+    color: rgba(73, 112, 18, 0.782);
+    font-size: 30px;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 2em;
+}

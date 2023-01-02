@@ -31,4 +31,6 @@ font-style: italic;<br>font-weight: normal;<br>font-size: 3em;<br>font-family: C
 simplificação:<br>
 !IMPORTANTE! style->weight->size->family <br> `font:italic normal 3em Courier New;`
 
+text-indent: (tamanho)-> igual a margem inicial para inicio de paragrafo.
+
 
