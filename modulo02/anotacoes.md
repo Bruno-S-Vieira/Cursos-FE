@@ -20,17 +20,14 @@ https://www.w3schools.com/cssref/css_websafe_fonts.php#:~:text=use%20fallback%20
 Fontes bonitas: Courier New; Proxima Nova;<br>Pesquisar-><br>
 Google Fonts<br>Dafont.com<br>Whatfontis<br>FontSquirrel
 
-->Opções em comandos:
+## Simplificação:<br>
+style->weight->size->family <br> `font:italic normal 3em Courier New;`
 
-----shorthand font----
+ width->type->color<br>`border: 1px solid rgba(0, 0, 0, 0.7);`
 
-ex:
+ ## Comandos para lembrar:
 
-font-style: italic;<br>font-weight: normal;<br>font-size: 3em;<br>font-family: Courier New;
-
-simplificação:<br>
-!IMPORTANTE! style->weight->size->family <br> `font:italic normal 3em Courier New;`
-
-text-indent: (tamanho)-> igual a margem inicial para inicio de paragrafo.
-
+box-shadow: 5px 5px 15px (cor); -> sombra  
+text-indent: (tamanho)-> inicio de paragrafo.  
+div:hover {background-color: (cor);} -> passar mouse por cima
 
