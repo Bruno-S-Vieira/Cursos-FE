@@ -33,3 +33,7 @@ box-shadow: 5px 5px 15px (cor); -> sombra
 text-indent: (tamanho)-> inicio de paragrafo.  
 div:hover {background-color: (cor);} -> passar mouse por cima
 
+* box's: 
+
+padding: (valor);
+
