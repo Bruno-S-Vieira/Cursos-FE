@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(139, 86, 188);
+        }
+        a:hover {
+            color: rgb(255, 0, 0);
+        }
+        a:visited {
+            color: rgb(122, 0, 0);
+        }
+        a:active {
+            color: rgb(0, 0, 0); /*ao clicar no link*/
+        }
+        .especial {
+            background-color: rgb(255, 146, 146);
+            color: whitesmoke;
+        }
+        .especial::before {
+            content: "→";
+        }
+        .especial::after {
+            content: "←";
+            /*font-weight: normal;
+            content: "[link]";
+            color: rgb(207, 206, 206);*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/brup12v12" target="_blank" class="especial">Perfil GitHub</a></li>
+        <li><a href="https://www.twitch.tv/brup__" target="_blank">Perfil Twitch</a></li>
+        <li><a href="https://translate.google.com.br/?hl=pt-BR" target="_blank">Google tradutor</a></li> <!--só um exemplo de um link n visitado-->
+    </ul>
+    
+</body>
+</html>

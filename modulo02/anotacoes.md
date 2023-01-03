@@ -1,5 +1,7 @@
 # Anotações CSS
 ***
+## Simbolos  
+https://erikasarti.com/html/dingbats-simbolos-desenhos/
 ## Cores
 * Paletas de cores:
 
