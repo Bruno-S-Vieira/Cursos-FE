@@ -14,13 +14,25 @@ header {
     box-shadow: 5px 5px 15px #232323;
 }
 main {
-    padding: 10px;
-    margin: 14px 150px 15px 150px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 10px;
     background-color: white;
     border-radius: 1px  1px 8px 8px;
 }
+main p {
+text-align: justify;
+text-indent: 30px;
+padding: 5px 10px 5px 10px;
+margin: 15px 0px;
+line-height: 2em;
+font-size: 1.1em;
+}
 .titulo {
     color: #20603E;
+    background-image: linear-gradient(to right,
+#9af9a0, #e1fae6, #ffffff) ;
 }
 p {
     text-indent: 32px;
@@ -38,4 +50,18 @@ footer {
     text-align: center;
     background-color: #1A5C38;
     color: white;
+}
+img {
+    display: block;
+    margin: auto;
+}
+#video {
+    margin: -20px;
+    padding: 20px 20px 50px 20px;
+    background-color: #1A5C38;
+}
+.extra {
+    padding: px 0px 0px 0px;
+    background-color: #26b066;
+    border-radius: 10px;
 }
