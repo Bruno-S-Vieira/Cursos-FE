@@ -6,22 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Caixas</title>
     <style>
-        h1 {
+        h1 {    /*Box level*/ 
             background-color: rgb(238, 221, 254);
             height: 50px;
             width: 400px;
-            border-width: 10px;
+
+           /* border-width: 10px;
             border-style: solid;
             border-color: rgb(216, 183, 247);
+                        Short hand             
+            */
+            border: 10px solid rgb(216, 183, 247);
+
             padding: 15px;
+
+            margin: 25px 8px 25px 8px;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: rgb(198, 198, 255);*/
+            outline: 5px dashed rgb(198, 198, 255);
+
         }
-        a {
+        a { /*Inline level*/
             color: rgb(85, 45, 121);
             text-decoration: none;
-            border-width: 2px;
-            border-style: solid;
-            border-color: rgb(230, 208, 255);
+
+            border: 2px solid rgb(230, 208, 255);
+
             padding: 2px;
+
+            margin: 5px;
+
+            outline: 2px dashed rgb(198, 198, 255);
         }
     </style>
 </head>
