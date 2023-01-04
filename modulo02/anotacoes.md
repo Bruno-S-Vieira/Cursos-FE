@@ -31,7 +31,8 @@ style->weight->size->family <br> `font:italic normal 3em Courier New;`
 
 box-shadow: 5px 5px 15px (cor); -> sombra  
 text-indent: (tamanho)-> inicio de paragrafo.  
-div:hover {background-color: (cor);} -> passar mouse por cima
+div:hover {background-color: (cor);} -> passar mouse.
+border-radius: ()px;--> arredondar bordas.
 
 * box's: 
 
