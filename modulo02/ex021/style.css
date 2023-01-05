@@ -13,6 +13,8 @@ header {
 nav {
     background-color: rgb(161, 160, 160);
     padding: 5px;
+    box-shadow: 3px 3px 4px rgba(65, 65, 65, 0.77);
+    border-radius: 5px;
 }
 nav > a {
     text-decoration: none;
@@ -28,9 +30,11 @@ mark {
     background-color: rgb(185, 184, 184);
 }
 main {
-    padding: 20px;
-    margin: 15px;
+    padding: 15px;
+    margin: 10px;
     background-color: rgb(215, 212, 212);
+    box-shadow: 3px 3px 4px rgba(65, 65, 65, 0.77);
+    border-radius: 10px;
 }
 p {
     text-indent: 32px;
@@ -42,13 +46,6 @@ article > aside {
 .titulo {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
-}
-footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 1px;
-    margin: 0px;
 }
 a {
     text-decoration: none;
@@ -62,3 +59,20 @@ a:hover {
 section {
     padding-top: 16px;
 }
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 0px;
+}
+footer > p {
+    margin: 0px;
+}
+/*#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: black;
+    border-radius: 50%; ou 500px
+}*/
