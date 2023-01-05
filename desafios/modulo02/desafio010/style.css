@@ -1,23 +1,52 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('IDroid.otf') format("opentype");
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #84E1AD;
     font-weight: bold;
     font-size: 16px;
+    margin: 0px;
 }
+
+/*--------HEADER-----------*/
 header {
-    background-image: linear-gradient(to top, #1A5D38, #288E55, #3DDA84);
+    background-image: linear-gradient(to top, #12482b, #126236, #28a45e, #32b06b);
     color: white;
     padding: 10px;
     margin: -10px;
     text-align: center;
-    box-shadow: 5px 5px 15px #232323;
 }
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+}
+nav {
+    display: flex;
+}
+nav  > div {
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+div.cabecalho:hover {
+    background-color: #368759;
+    border-radius: 8px;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/*----------MAIN--------------*/
+
 main {
     min-width: 300px;
     max-width: 1000px;
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
     background-color: white;
     border-radius: 1px  1px 8px 8px;
 }
@@ -30,26 +59,25 @@ line-height: 2em;
 font-size: 1.1em;
 }
 .titulo {
+    font-family: 'Android';
     color: #20603E;
     background-image: linear-gradient(to right,
 #9af9a0, #e1fae6, #ffffff) ;
 }
 p {
     text-indent: 32px;
+    padding: 10px;
 }
-a {
+a.link {
     text-decoration: none;
-    color: #0d4827;
+    color: #1A5C38;
+    padding: 3px;
 }
-a:hover {
-
-    color: rgb(18, 183, 18);
+.link::after {
+    content: '🔗';
 }
-footer {
-    padding: 0.1px;
-    text-align: center;
-    background-color: #1A5C38;
-    color: white;
+a.link:hover {
+    text-decoration: underline;
 }
 img {
     display: block;
@@ -57,15 +85,42 @@ img {
 }
 #video {
     margin: -20px;
-    padding: 20px 20px 100px 20px;
+    padding: 20px 20px 60px 20px;
 }
 .video {
     background-color: #1A5C38;
     margin: -20px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 .extra {
-    padding: px 0px 0px 0px;
-    background-color: #26b066;
+    background-color: #C5EBD6;
+    padding: 0px;
     border-radius: 10px;
+}
+div > h3 {
+    text-indent: 20px;
+    margin: auto;
+    padding: 8px;
+    color: rgb(232, 232, 232);
+    background-color: #3ece7f;
+    border-radius: 10px 10px 0px 0px;
+}
+#color {
+    color: #32b06b;
+}
+#emphase {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/*------------FOOTER---------------*/
+
+footer {
+    margin: -5px -10px;
+    text-align: center;
+    background-color: #1A5C38;
+    color: white;
+}
+footer > p {
+    margin-bottom: 0px;
 }
