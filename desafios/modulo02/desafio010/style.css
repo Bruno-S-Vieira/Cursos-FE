@@ -11,7 +11,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #C5EBD6;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0px;
 }
 :root {
@@ -22,6 +22,8 @@ body {
     --cor4: #12482b;
     --corlink: #368759;
     --corextra: #C5EBD6;
+    --cortitulo1: #9af9a0;
+    --cortitulo2: #e1fae6;
 
     --fonte-padrao: 'Arial, Helvetica, sans-serif';
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -31,31 +33,36 @@ body {
 /*--------HEADER-----------*/
 
 header {
-    background-image: linear-gradient(to top, #12482b, #126236, #28a45e, #32b06b);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
     color: var(--cor0);
-    padding: 30px;
-    margin: -10px;
+
+    min-height: 150px;
+    padding-top: 40px;
     text-align: center;
 }
-h1#principal{
+header > h1 {
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.604);
 }
-h1 {
-    font-size: 2em;
+header > p {
+    margin: 20px;
+    padding: 10px;
+    font-size: 22px;
 }
 nav {
     display: flex;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.311);
 }
-.nav-link:hover {
-    background-color: var(--corlink);
-    border-radius: 8px;
-}
-.nav-link {
+nav > a {
     color: var(--cor0);
     text-decoration: none;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
+}
+nav> a:hover {
+    background-color: var(--corlink);
+    border-radius: 8px;
 }
 
 
@@ -68,7 +75,11 @@ main {
     margin: 10px auto;
     background-color: var(--cor0);
     border-radius: 1px  1px 8px 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.642);
 }
+h1 {
+    font-size: 2em;
+} 
 main p {
 text-align: justify;
 text-indent: 30px;
@@ -81,9 +92,10 @@ font-size: 1.1em;
     font-family: var(--fonte-android);
     color: var(--cor3);
     background-image: linear-gradient(to right,
-#9af9a0, #e1fae6, #ffffff) ;
+var(--cortitulo1), var(--cortitulo2), white);
 }
 p {
+    margin: 40px 0px 20px 0px;
     text-indent: 32px;
     padding: 10px;
 }
@@ -98,9 +110,15 @@ a.link {
 a.link:hover {
     text-decoration: underline;
 }
+
 img {
+    width: 100%;
+}
+img.pequena {
+    width: 50%;
     display: block;
     margin: auto;
+
 }
 #video {
     margin: -20px;
@@ -111,6 +129,7 @@ div.video {
     margin: -20px;
     padding: 20px;
 }
+
 .extra {
     background-color: var(--corextra);
     padding: 0px;
@@ -131,6 +150,7 @@ div > h3 {
     color: var(--cor0);
     font-weight: bolder;
 }
+
 ul {
     margin: 15px;
     padding: 25px;
@@ -142,7 +162,7 @@ ul {
 footer {
     margin: -5px -10px;
     text-align: center;
-    background-color: #1A5C38;
+    background-color: var(--cor4);
     color: var(--cor0);
 }
 footer > p {
