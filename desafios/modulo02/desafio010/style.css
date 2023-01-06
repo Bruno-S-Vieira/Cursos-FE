@@ -21,6 +21,7 @@ body {
     --cor3: #126236;
     --cor4: #12482b;
     --corlink: #368759;
+    --corhover: #88db79;
     --corextra: #C5EBD6;
     --cortitulo1: #9af9a0;
     --cortitulo2: #e1fae6;
@@ -85,7 +86,7 @@ text-align: justify;
 text-indent: 30px;
 padding: 5px 10px 5px 10px;
 margin: 15px 0px;
-line-height: 2em;
+line-height: 1.5em;
 font-size: 1.1em;
 }
 .titulo {
@@ -93,12 +94,9 @@ font-size: 1.1em;
     color: var(--cor3);
     background-image: linear-gradient(to right,
 var(--cortitulo1), var(--cortitulo2), white);
+    text-indent: 8px;
 }
-p {
-    margin: 40px 0px 20px 0px;
-    text-indent: 32px;
-    padding: 10px;
-}
+
 a.link {
     text-decoration: none;
     color: var(--corlink);
@@ -108,6 +106,7 @@ a.link {
     content: '🔗';
 }
 a.link:hover {
+    color: var(--corhover);
     text-decoration: underline;
 }
 
@@ -115,25 +114,33 @@ img {
     width: 100%;
 }
 img.pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 
 }
-#video {
-    margin: -20px;
-    padding: 20px 20px 60px 20px;
-}
 div.video {
     background-color: var(--cor4);
-    margin: -20px;
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
     padding: 20px;
+    padding-bottom: 56.5%;
+    
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 .extra {
     background-color: var(--corextra);
     padding: 0px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.305);
 }
 div > h3 {
     text-indent: 20px;
@@ -143,6 +150,7 @@ div > h3 {
     background-color: var(--cor1);
     border-radius: 10px 10px 0px 0px;
 }
+
 #color {
     color: var(--cor1);
 }
@@ -151,9 +159,11 @@ div > h3 {
     font-weight: bolder;
 }
 
-ul {
-    margin: 15px;
-    padding: 25px;
+div > ul {
+    list-style-type: '\2714\00A0\00A0';
+    padding: 20px;
+    list-style-position: inside;
+    columns: 2;
 }
 
 

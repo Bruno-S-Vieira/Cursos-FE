@@ -34,6 +34,31 @@ text-indent: (tamanho)-> inicio de paragrafo.
 div:hover {background-color: (cor);} -> passar mouse.
 border-radius: ()px;--> arredondar bordas.
 
+listas com check:
+ex:-->ul {
+    list-style-type: '\2714\00A0\00A0';
+    padding: 20px;
+    list-style-position: inside;
+    columns: 2;}
+
+ajuste de vídeo: ex--
+div.video {
+    background-color: var(--cor4);
+    margin-bottom: 30px;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 * box's: 
 
 padding: (valor);
