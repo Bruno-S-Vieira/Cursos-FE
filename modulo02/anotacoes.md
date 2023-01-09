@@ -59,7 +59,8 @@ div.video > iframe {
     height: 90%;
 }
 
-* box's: 
+background-size: cover; --> cobrir toda a viewport
 
+* box's: 
 padding: (valor);
 
