@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(imagens/wallpaper001.jpg);
+}
+div.quadrado {
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.461);
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.338);
+
+    width: 300px;
+    height: 300px;
+    margin: 6px;
+}
+div#q1 {
+    background-color: lightblue;
+    box-shadow: inset -5px -5px 4px #80b3c5b7;
+}
+div#q2 {
+    background-image: linear-gradient(to bottom, rgb(225, 15, 50), rgb(247, 154, 166), rgb(255, 234, 234));
+}
+div#q3 {
+    background-image: url(imagens/pattern003.png);
+}
+div.bola {
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.461);
+    border-radius: 150px;
+    background-color: lightgray;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.338);
+    
+    width: 300px;
+    height: 300px;
+    margin: 6px;
+}
+div#b1 {
+    background-color: rgb(207, 155, 255);
+}
+div#b2 {
+    background-image: linear-gradient(to top, red, rgb(213, 116, 116), rgb(222, 179, 179));
+}
+div#b3 {
+    background-image: url(imagens/pattern001.png);
+}
