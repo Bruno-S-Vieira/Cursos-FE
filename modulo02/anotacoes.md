@@ -27,6 +27,10 @@ style->weight->size->family <br> `font:italic normal 3em Courier New;`
 
  width->type->color<br>`border: 1px solid rgba(0, 0, 0, 0.7);`
 
+shorthand background:  color-image-position-repeat-[size]-attachment  
+ex:  
+background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;  
+background-size: cover;   (size n funcionando no shorhand atualmente)
  ## Comandos para lembrar:
 
 box-shadow: 5px 5px 15px (cor); -> sombra  
