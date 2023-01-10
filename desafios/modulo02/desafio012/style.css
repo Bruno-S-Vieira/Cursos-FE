@@ -8,11 +8,11 @@
 :root {
     --font-titulo: 'Passion One', cursive;
     --font-text: 'Sriracha', cursive;
-    --font-padrão: Arial, Helvetica, sans-serif;
+    --font-padrão: Verdana, Geneva, Tahoma, sans-serif;
 
     --cor1: black;
     --cor2: white;
-    --cor3: rgba(0, 0, 0, 0.302);
+    --cor3: rgba(0, 0, 0, 0.535);
 }
 body {
     min-height: 100vh;
@@ -22,7 +22,6 @@ body {
 header {
     font-family: var(--font-titulo);
     margin: -20px;
-    padding: 60px 20px 20px 20px;
     text-align: center;
 
     height: 200px;
@@ -32,10 +31,14 @@ header {
 
 header > h1 {
     font-size: 3em;
-    padding: 20px;
+    padding-top: 50px;
+    font-size: 8vw;
+    font-variant: small-caps;
+
 }
 header > p {
-    font-size: 1.5em;
+    font-family: var(--font-padrão);
+    padding-top: 10px;
 }
 
 a {
@@ -47,25 +50,23 @@ a:hover {
     color: rgb(117, 117, 246);
 }
 /*------------------------*/
-pre {
+pre { 
+    white-space: pre-line;
+}
+section {
     font-family: var(--font-text);
-    font-size: bolder;
-    font-size: 32px;
-    padding: 20px;
-    
+    font-size: 4vw;
+    padding-left: 50px;
 }
-div {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
+#normal > p {
+    padding-bottom: 2em;
 }
-div.normal {
-    margin: 5px;
-    padding: 10px;
-}
-div.imagem > p {
-    width: 400px;
+section.imagem > p {
     background-color: var(--cor3);
+    text-shadow: 2px 2px 0px black;
+    padding: 30px;
+    display: inline-block;
+    margin: 30px;
 }
 #img01 {
     background-image: url(imagens/background001.jpg);
@@ -75,8 +76,8 @@ div.imagem > p {
     background-image: url(imagens/background002.jpg);
     background-position: right center;
 }
-.imagem {
-    background-color: rgb(58, 57, 57);
+section.imagem {
+    background-color: rgba(58, 57, 57, 0.776);
     color: white;
     padding: 50px;
     margin: 0px -60px;
