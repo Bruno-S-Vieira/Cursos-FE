@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            height: 150px;
+            text-align: center;
+            padding: 20px;
+            margin: -30px;
+            margin-top: -60px;
+        }
+        header > h1 {
+            padding: 50px;
+            background-color: rgb(64, 64, 64);
+            color: white;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.616);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.399);
+        }
+
+        table {
+            width: 300px;
+            margin: 50px;
+            margin-left: 20px;
+            border-collapse: collapse;
+            /*vertical-align: ;----> para alinhar conteúdos na vertical*/
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        tr.linha {
+            background-color: lightgrey;
+        }
+        table:hover {
+            border: 3px solid rgb(59, 59, 59);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.491);
+        }
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha primeira tabela</h1>
+    </header>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td class="numero">R$500</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td  class="numero">C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+            <td class="numero">C5</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
