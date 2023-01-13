@@ -63,6 +63,11 @@ div.video > iframe {
     height: 90%;
 }
 
+Tabelas zebradas:   
+tbody > tr:nth-child(2n) {
+            background-color: rgb(218, 217, 217);
+        }
+
 background-size: cover; --> cobrir toda a viewport
 
 * box's: 
