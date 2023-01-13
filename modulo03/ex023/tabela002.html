@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -13,18 +18,33 @@
             background-color: rgb(52, 52, 194);
             color: white;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.483);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.475);
             text-align: center;
             padding: 10px;
+            /* margin-top: 1px; */
+        }
+        main {
+            padding: 20px;
+        }
+        main > p {
+            margin: 20px;
+            font-size: 20px;
         }
         table {
-            width: 600px;
+            margin: auto;
+            max-width: 600px;
+            width: 100%;
             border-collapse: collapse;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.475);
         }
         caption {
             font-weight: bold;
             font-size: 1.5em;
             padding: 10px;
             background-color: rgb(189, 189, 189);
+            border: 1px solid black;
+            border-bottom: 0;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.475);
         }
         tbody > tr:nth-child(2n) {
             background-color: rgb(218, 217, 217);
@@ -51,83 +71,87 @@
     </style>
 </head>
 <body>
-    <!--<tr>= linha da tabela-->
-    <h1>Uso de tabelas grandes</h1>
+    <header>
+        <h1>Uso de tabelas grandes</h1>
+    </header>
 
-    <table>
-        <caption>População das Unidades Federativas</caption>
-        <thead>
-            <tr>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 50px;">População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Goiás</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Pernambuco</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Amazonas</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Acre</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Pará</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Bahia</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Espirito Santo</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Santa Catarina</td>
-                <td class="num">999</td>
-            </tr>
-            <tr>
-                <td>Paraná</td>
-                <td class="num">999</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td  class="num"><strong>999</strong></td>
-            </tr>
-        </tfoot>
-    </table>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+    <main>
+            <!--<tr>= linha da tabela-->
+            <table>
+                <caption>População das Unidades Federativas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Estado</th>
+                        <th scope="col" style="width: 50px;">População</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Sul</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Goiás</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Pernambuco</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonas</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Acre</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Pará</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Bahia</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Espirito Santo</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Santa Catarina</td>
+                        <td class="num">999</td>
+                    </tr>
+                    <tr>
+                        <td>Paraná</td>
+                        <td class="num">999</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Total de Habitantes</th>
+                        <td  class="num"><strong>999</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque unde maiores obcaecati odit, facilis, fugiat possimus dolore aperiam exercitationem earum nobis optio quam, perspiciatis cupiditate placeat animi magni iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illo nulla asperiores nobis, in dolores, neque assumenda odio voluptatem, at maiores possimus? Tempore exercitationem vero quo vel pariatur quos ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab, distinctio animi mollitia consequuntur cupiditate quam enim quia itaque maxime sequi nulla quae libero natus aspernatur praesentium saepe! Voluptas, id.</p>
+    </main>
 
 </body>
 </html>
