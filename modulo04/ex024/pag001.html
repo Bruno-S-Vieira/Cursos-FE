@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(89, 154, 176);
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        div {
+            background-color: rgb(45, 108, 135);
+            padding: 1px;
+            margin: 10px;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            background-color: lightgray;
+            color: black;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: rgb(171, 170, 170);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Isso é um teste</h1>
+    </div>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>45</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Advogado</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Frentista</td>
+            </tr>
+            <tr>
+                <td>Fabiana</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Farmacéutica</td>
+            </tr>
+        </thead>
+</body>
+</html>
