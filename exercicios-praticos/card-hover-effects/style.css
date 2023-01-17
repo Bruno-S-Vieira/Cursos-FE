@@ -41,7 +41,7 @@ img {
 }
 .container .card:hover .face.face1 {
     transform: translateY(0px);
-    background: #ff0057;;
+    background: #0516ff;;
 }
 .container .card .face.face1 .content {
     opacity: 0.5;
