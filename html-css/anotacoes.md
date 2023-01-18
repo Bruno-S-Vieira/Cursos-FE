@@ -31,6 +31,8 @@ shorthand background:  color-image-position-repeat-[size]-attachment
 ex:  
 background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;  
 background-size: cover;   (size n funcionando no shorhand atualmente)
+
+
  ## Comandos para lembrar:
 
 box-shadow: 5px 5px 15px (cor); -> sombra  
@@ -69,6 +71,17 @@ tbody > tr:nth-child(2n) {
         }
 
 background-size: cover; --> cobrir toda a viewport
+
+Esconder a barra de scroll  
+ ::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
+
+
+
+
+
 
 * box's: 
 padding: (valor);
