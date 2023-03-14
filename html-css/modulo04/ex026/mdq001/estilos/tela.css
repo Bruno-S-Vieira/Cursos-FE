@@ -12,21 +12,41 @@ html {
     font-size: 1.10em;
 }
 header {
-    margin: 50px;
-    background-color: lightgray;
-    padding: 70px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
-    border-radius: 4px;
+    background-color: rgba(247, 247, 247, 0.795);
 }
 header > h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
     font-size: 3em;
-    color: rgb(240, 126, 126);
-    text-shadow: 3px 3px 3px rgba(75, 71, 71, 0.404);
+    color: rgb(223, 94, 94);
+    font-weight: 900;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.301);
+}
+
+menu ul {
+    background-color: lightgray;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.295);
+}
+menu li {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 70px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.185);
 }
 li > a {
+    font-weight: 900;
     font-size: 1.25em;
     text-decoration: none;
-    color: lightcoral;
+    color: rgb(214, 50, 50);
+}
+a:hover {
+    color: brown;
+}
+article {
+    display: block;
+    margin: auto;
+    width: 800px;
 }

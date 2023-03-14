@@ -3,8 +3,8 @@
 /*Estilo para versão de impressão*/
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
 }
 
 html {
@@ -12,20 +12,14 @@ html {
     font-size: 1.25em;
     line-height: 1.5em;
 }
-
-header {
-    margin: 20px;
-    line-height: 2em;
-}
  
-menu > ul > li {
-    color: blueviolet;
-    font-size: 1.25em;
+menu {
+    display: none;
 }
 
-h2 {
-    padding: 20px;
+article {
+    width: 100%;
 }
-p {
-    text-align: center;
+article::after {
+    content: 'Esse artigo foi impresso através do curso de HTML5 e CSS3 do goiaba/ www.cursoemvideo.com';
 }
