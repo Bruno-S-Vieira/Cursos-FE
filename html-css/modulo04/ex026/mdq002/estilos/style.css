@@ -1,3 +1,25 @@
 @charset "UTF-8";
 
 /* Configurações gerais */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: rgb(77, 74, 74);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.616);
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+}
