@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*   
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+*/
+
+/* Mobile First */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --colorWhite: #fff;
+    --colorbody: #CDAF87;
+    --colorBgAbout: #CDAF87;
+    --colorHover: #FCBE3A;
+}
+/*HEADER*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 0  0 40px;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    justify-content: space-around;
+}
+
+header .logo {
+    color: var(--colorWhite);
+    font-weight: 500;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span {
+    color: #F8BB38;
+}
+
+header .dashboard {
+    position: relative;
+    display: flex;
+}
+header .dashboard li {
+    list-style: none;
+    margin-left: 30px;
+}
+header .dashboard li a {
+    color: var(--colorWhite);
+    text-decoration: none;
+}
+header .dashboard li a:hover {
+    background-color: var(--colorHover);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*MAIN*/
+body {
+    background-color: var(--colorbody);
+}
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:  url(../imagens/bg-girassol.jpg);
+    background-size: cover;
+}
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h1 {
+    font-size: 4em;
+    color: var(--colorWhite);
+}
+.banner .content p {
+    font-size: 1.3em;
+    color: var(--colorWhite);
+}
+.link {
+    font-size: 1em;
+    color: var(--colorWhite);
+    text-decoration: none;
+    background-color: #CDAF87;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    transition: 1s;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+.link:hover {
+    letter-spacing: 6px;
+    color: var(--colorWhite);
+}
+
+
+.about {
+    align-items: center;
+    justify-content: center center;
+    height: 100vh;
+    background: var(--colorBgAbout);
+    color: var(--colorWhite);
+    margin-top: 100px;
+    padding-top: 100px;
+    padding: 20px;
+}
+.about #text01 {
+    text-align: center;
+    height: 800px;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.329);
+}
+.about #text01 h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgb(5, 5, 53);
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.about #text01 p {
+    font-size: 1em;
+    padding: 10px;
+}
+
+#img01 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.144));
+}
