@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --fontetitle: 'Poppins', sans-serif;
+
+    --colordetails01: rgba(228, 228, 69, 0.719);
+    --colordetails02: rgb(126, 126, 35);
+}
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    /* display: flex; */
+    text-align: center;
+    background-color: rgb(133, 133, 133);
+    justify-content: space-between;
+    padding: 20px;
+}
+header h1 {
+    padding: 10px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 2em;
+    font-family: var(--fontetitle);
+}
+header h1 span {
+    color: var(--colordetails01);
+    font-family: var(--fontetitle);
+}
+menu {
+    display: block;
+}
+menu ul {
+    list-style: none;
+}
+menu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(71, 71, 71, 0.493);
+    border: 2px solid rgba(77, 76, 76, 0.5);
+}
+menu a:hover {
+    color: var(--colordetails01);
+    background-color: rgb(119, 119, 119);
+}
+
+main {
+    width: 88vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+main article {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+article h2 {
+    padding: 10px;
+    color: var(--colordetails02);
+    font-family: var(--fontetitle);
+    font-size: 2em;
+}
+article p {
+    margin: auto;
+    text-align: justify;
+    font-family: var(--fontetitle);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80vw;
+    text-indent: 20px;
+}

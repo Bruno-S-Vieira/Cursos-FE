@@ -15,7 +15,7 @@
     --colorWhite: #fff;
     --colorbody: #CDAF87;
     --colorBgAbout: #CDAF87;
-    --colorHover: #FCBE3A;
+    --colorHover: #F8BB38;
 }
 /*HEADER*/
 header {
@@ -38,7 +38,7 @@ header .logo {
     text-decoration: none;
 }
 header .logo span {
-    color: #F8BB38;
+    color: var(--colorHover);
 }
 
 header .dashboard {
