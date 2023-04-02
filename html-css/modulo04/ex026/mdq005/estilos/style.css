@@ -33,8 +33,22 @@ header h1 span {
     color: var(--colordetails01);
     font-family: var(--fontetitle);
 }
+#burguer {
+    background-color: rgb(102, 101, 101);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#burguer:hover {
+    background-color: lightgray;
+    color: rgb(102, 101, 101);
+}
+
 menu {
-    display: block;
+    display: none;
 }
 menu ul {
     list-style: none;

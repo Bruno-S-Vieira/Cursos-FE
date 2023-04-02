@@ -41,19 +41,37 @@ header .logo span {
     color: var(--colorHover);
 }
 
-header .dashboard {
+#burguer {
+    background-color: rgb(102, 101, 101);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#burguer:hover {
+    background-color: lightgray;
+    color: rgb(102, 101, 101);
+}
+
+menu {
+    display: none;
+}
+
+/* header .dashboard {
     position: relative;
     display: flex;
-}
-header .dashboard li {
+} */
+menu ul {
     list-style: none;
-    margin-left: 30px;
 }
-header .dashboard li a {
+
+.dashboard li a {
     color: var(--colorWhite);
     text-decoration: none;
 }
-header .dashboard li a:hover {
+.dashboard li a:hover {
     background-color: var(--colorHover);
     padding: 10px;
     border-radius: 10px;

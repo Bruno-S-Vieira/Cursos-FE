@@ -21,12 +21,15 @@
 <body>
     <header>
         <a href="#" class="logo"><span>Sun</span>flower<span>.</span></a>
-        <ul class="dashboard">
-            <li><a href="#banner">Início</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#items">Itens</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
+        <ion-icon id="burguer" class="icons"name="reorder-four-outline" onclick="clickMenu()"></ion-icon>
+        <menu id="itens">
+            <ul class="dashboard">
+                <li><a href="#banner">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#items">Itens</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </menu>
     </header>
     <main>
         <section class="banner" id="banner">
@@ -51,5 +54,18 @@
         </section>
     </main>
     <footer></footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
