@@ -161,3 +161,8 @@ body {
     border-radius: 5px;
     filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.144));
 }
+
+footer {
+    background-color: white;
+    text-align: center;
+}
