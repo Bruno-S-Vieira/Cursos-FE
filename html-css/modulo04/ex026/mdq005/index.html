@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Media Query</title>
 <link rel="stylesheet" href="estilos/style.css">
+<link rel="stylesheet" href="estilos/media-query.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>My Site in your <span>Head.</span></h1>
         <ion-icon id="burguer" class="icons"name="reorder-four-outline" onclick="clickMenu()"></ion-icon>
@@ -43,6 +45,15 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
